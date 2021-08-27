@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@null"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/mealImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:translationZ="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/burger" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/background_bottomsheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewFav"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="TODO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_favorite" />
+
+        <TextView
+            android:id="@+id/foodNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cheese Burger"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/shopNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/shopNameTextView" />
+
+        <TextView
+            android:id="@+id/shopNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="BBQ Bacon"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewFav" />
+
+        <TextView
+            android:id="@+id/foodPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12.60"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/foodNameTextView"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewFav"
+            app:layout_constraintTop_toTopOf="@+id/foodNameTextView" />
+
+        <TextView
+            android:id="@+id/dollarSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/foodPriceTextView"
+            app:layout_constraintEnd_toStartOf="@id/foodPriceTextView"
+            app:layout_constraintTop_toTopOf="@id/foodPriceTextView" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/qty"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/foodNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/foodNameTextView" />
+
+
+        <View
+            android:id="@+id/plusView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/background_choose_item"
+            app:layout_constraintBottom_toBottomOf="@+id/textView22"
+            app:layout_constraintEnd_toEndOf="@+id/foodPriceTextView"
+            app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="@color/lightGray"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/plusView"
+            app:layout_constraintEnd_toEndOf="@id/plusView"
+            app:layout_constraintStart_toStartOf="@id/plusView"
+            app:layout_constraintTop_toTopOf="@id/plusView" />
+
+        <TextView
+            android:id="@+id/countTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/plusView"
+            app:layout_constraintEnd_toStartOf="@+id/plusView"
+            app:layout_constraintTop_toTopOf="@+id/plusView" />
+
+        <View
+            android:id="@+id/minusView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_choose_item"
+            app:layout_constraintBottom_toBottomOf="@+id/textView22"
+            app:layout_constraintEnd_toStartOf="@+id/countTextView"
+            app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/lightGray"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/minusView"
+            app:layout_constraintEnd_toEndOf="@id/minusView"
+            app:layout_constraintStart_toStartOf="@id/minusView"
+            app:layout_constraintTop_toTopOf="@id/minusView" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/size"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <View
+            android:id="@+id/oneView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/background_choose_item"
+            app:layout_constraintBottom_toBottomOf="@+id/textView23"
+            app:layout_constraintEnd_toEndOf="@+id/foodPriceTextView"
+            app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/size20TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/oneView"
+            app:layout_constraintEnd_toEndOf="@id/oneView"
+            app:layout_constraintStart_toStartOf="@id/oneView"
+            app:layout_constraintTop_toTopOf="@id/oneView" />
+
+        <View
+            android:id="@+id/twoView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/background_choose_item"
+            app:layout_constraintBottom_toBottomOf="@+id/oneView"
+            app:layout_constraintEnd_toStartOf="@+id/oneView"
+            app:layout_constraintTop_toTopOf="@+id/oneView" />
+
+        <TextView
+            android:id="@+id/size16TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/twoView"
+            app:layout_constraintEnd_toEndOf="@id/twoView"
+            app:layout_constraintStart_toStartOf="@id/twoView"
+            app:layout_constraintTop_toTopOf="@id/twoView" />
+
+        <View
+            android:id="@+id/threeView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/background_choose_item"
+            app:layout_constraintBottom_toBottomOf="@+id/twoView"
+            app:layout_constraintEnd_toStartOf="@+id/twoView"
+            app:layout_constraintTop_toTopOf="@+id/twoView" />
+
+        <TextView
+            android:id="@+id/size14TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/threeView"
+            app:layout_constraintEnd_toEndOf="@id/threeView"
+            app:layout_constraintStart_toStartOf="@id/threeView"
+            app:layout_constraintTop_toTopOf="@id/threeView" />
+
+        <View
+            android:id="@+id/fourView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/background_choose_item"
+            app:layout_constraintBottom_toBottomOf="@+id/threeView"
+            app:layout_constraintEnd_toStartOf="@+id/threeView"
+            app:layout_constraintTop_toTopOf="@+id/threeView" />
+
+        <TextView
+            android:id="@+id/size12TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/fourView"
+            app:layout_constraintEnd_toEndOf="@id/fourView"
+            app:layout_constraintStart_toStartOf="@id/fourView"
+            app:layout_constraintTop_toTopOf="@id/fourView" />
+
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/tag"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView23"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <View
+            android:id="@+id/tagView"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/background_choose_item"
+            app:layout_constraintBottom_toBottomOf="@+id/textView24"
+            app:layout_constraintEnd_toEndOf="@+id/foodPriceTextView"
+            app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/tagTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="3dp"
+            android:text="@string/hand_tossed"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/tagView"
+            app:layout_constraintEnd_toEndOf="@id/tagView"
+            app:layout_constraintStart_toStartOf="@id/tagView"
+            app:layout_constraintTop_toTopOf="@id/tagView" />
+
+
+        <Button
+            android:id="@+id/buttonAddToCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="16dp"
+            android:text="@string/add_to_cart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

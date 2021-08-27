@@ -1,0 +1,26 @@
+<resources>
+    <!--
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=5B:48:D1:A5:F8:87:34:3F:94:C7:41:A0:02:37:75:C2:DF:BD:43:82%3Bcom.tahadroid.wing.ui.map
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.tahadroid.wing.ui.map
+
+    SHA-1 certificate fingerprint:
+    5B:48:D1:A5:F8:87:34:3F:94:C7:41:A0:02:37:75:C2:DF:BD:43:82
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    //old key
+    AIzaSyCdM6YmqUPWQ5siuPcjXKvhVgssM5GeBOc
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+      AIzaSyCdM6YmqUPWQ5siuPcjXKvhVgssM5GeBOc</string>
+</resources>

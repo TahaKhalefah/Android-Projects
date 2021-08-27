@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_12sdp"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:layout_marginRight="@dimen/_12sdp"
+    android:background="@drawable/product_item_background"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/product_item_background"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/order_no"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/order_no_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/order"
+            app:layout_constraintStart_toEndOf="@+id/order"
+            app:layout_constraintTop_toTopOf="@+id/order"
+            tools:text="2310" />
+
+        <ImageView
+            android:id="@+id/dashed_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:src="@drawable/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_no_tv" />
+
+        <TextView
+            android:id="@+id/user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            tools:text="Mnem" />
+
+        <TextView
+            android:id="@+id/payment_method_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/user_name_tv"
+            tools:text="Paybal:" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/order_on"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/payment_method_tv" />
+
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@color/blueCall"
+            app:layout_constraintBottom_toBottomOf="@+id/user_name_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/user_name_tv"
+            tools:text="01022850531" />
+
+        <TextView
+            android:id="@+id/cost_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/payment_method_tv"
+            app:layout_constraintStart_toEndOf="@+id/payment_method_tv"
+            app:layout_constraintTop_toTopOf="@+id/payment_method_tv"
+            tools:text="532" />
+
+
+        <TextView
+            android:id="@+id/state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_4sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/order_no_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/order_no_tv"
+            tools:text="@string/packing" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashed_line"
+            app:srcCompat="@drawable/ic_user" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_1sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/user_phone"
+            app:layout_constraintEnd_toStartOf="@+id/user_phone"
+            app:layout_constraintTop_toTopOf="@+id/user_phone"
+            app:srcCompat="@drawable/ic_baseline_local_phone_24" />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView15"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toTopOf="@+id/textView15"
+            tools:text="03-10-2021" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView15"
+            app:srcCompat="@drawable/ic_calendar" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/payment_method_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/payment_method_tv"
+            app:srcCompat="@drawable/ic_money" />
+
+        <TextView
+            android:id="@+id/payment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/cost_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintTop_toTopOf="@+id/cost_tv"
+            tools:text="COD" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/payment_tv"
+            app:layout_constraintEnd_toStartOf="@+id/payment_tv"
+            app:layout_constraintTop_toTopOf="@+id/payment_tv"
+            app:srcCompat="@drawable/ic_payment2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

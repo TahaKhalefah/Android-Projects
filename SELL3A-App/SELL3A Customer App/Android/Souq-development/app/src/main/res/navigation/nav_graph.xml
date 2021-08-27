@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            />
+
+        <action
+            android:id="@+id/action_homeFragment_to_listCategoryFragment"
+            app:destination="@id/listCategoryFragment"
+            app:enterAnim="@anim/top_animation"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_offerTypeFragment"
+            app:destination="@id/offerTypeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchSucceedFragment"
+            app:destination="@id/searchSucceedFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_self"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_offerFragment"
+            app:destination="@id/offerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/offerFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.offer.OfferFragment"
+        android:label="fragment_offer"
+        tools:layout="@layout/fragment_offer" >
+        <action
+            android:id="@+id/action_offerFragment_to_offerTypeFragment"
+            app:destination="@id/offerTypeFragment"
+            app:enterAnim="@anim/top_animation" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.account.AccountFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_accountFragment_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification">
+        <action
+            android:id="@+id/action_notificationFragment_to_notficationOfferFragment"
+            app:destination="@id/notficationOfferFragment" />
+        <action
+            android:id="@+id/action_notificationFragment_to_notificationActivityFragment"
+            app:destination="@id/notificationActivityFragment" />
+        <action
+            android:id="@+id/action_notificationFragment_to_notificationFeedFragment"
+            app:destination="@id/notificationFeedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notficationOfferFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.notification.NotificationOfferFragment"
+        android:label="fragment_notfication_offer"
+        tools:layout="@layout/fragment_notfication_offer" />
+    <fragment
+        android:id="@+id/notificationActivityFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.notification.NotificationActivityFragment"
+        android:label="fragment_notification_activity"
+        tools:layout="@layout/fragment_notification_activity" />
+    <fragment
+        android:id="@+id/notificationFeedFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.notification.NotificationFeedFragment"
+        android:label="fragment_notification_feed"
+        tools:layout="@layout/fragment_notification_feed" >
+        <action
+            android:id="@+id/action_notificationFeedFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/top_animation" />
+    </fragment>
+    <fragment
+        android:id="@+id/offerTypeFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.offerType.OfferTypeFragment"
+        android:label="fragment_offer_type"
+        tools:layout="@layout/fragment_offer_type" >
+        <action
+            android:id="@+id/action_offerTypeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/top_animation" />
+        <argument
+            android:name="saleTitle"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_offerTypeFragment_self"
+            app:destination="@id/offerTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/writeReviewFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.review.WriteReviewFragment"
+        android:label="fragment_write_review"
+        tools:layout="@layout/fragment_write_review" >
+        <argument
+            android:name="reviewResponse"
+            app:argType="ahmed.adel.sleeem.clowyy.souq.pojo.response.ReviewResponse$Item"
+            app:nullable="true" />
+        <argument
+            android:name="modify"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="productId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_writeReviewFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment"
+            app:popUpTo="@id/reviewFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.review.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review">
+        <action
+            android:id="@+id/action_reviewFragment_to_writeReviewFragment"
+            app:destination="@id/writeReviewFragment" />
+        <argument
+            android:name="product_id"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="deletedReview"
+            app:argType="ahmed.adel.sleeem.clowyy.souq.pojo.response.ReviewResponse$Item"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details">
+        <action
+            android:id="@+id/action_detailsFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+        <action
+            android:id="@+id/action_detailsFragment_self"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/top_animation" />
+        <argument
+            android:name="itemData"
+            app:argType="ahmed.adel.sleeem.clowyy.souq.pojo.response.ProductResponse$Item"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_detailsFragment_to_writeReviewFragment"
+            app:destination="@id/writeReviewFragment" />
+        <argument
+            android:name="itemId"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.account.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_changeNameFragment"
+            app:destination="@id/changeNameFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_chooseGenderFragment"
+            app:destination="@id/chooseGenderFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_changeMailFragment"
+            app:destination="@id/changeMailFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_phoneNumberFragment"
+            app:destination="@id/phoneNumberFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_birthdayFragment"
+            app:destination="@id/birthdayFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_adressFragment"
+            app:destination="@id/adressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeNameFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.account.ChangeNameFragment"
+        android:label="fragment_change_name"
+        tools:layout="@layout/fragment_change_name" />
+    <fragment
+        android:id="@+id/chooseGenderFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.account.ChooseGenderFragment"
+        android:label="fragment_choose_gender"
+        tools:layout="@layout/fragment_choose_gender" />
+    <fragment
+        android:id="@+id/changeMailFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.account.ChangeMailFragment"
+        android:label="fragment_change_mail"
+        tools:layout="@layout/fragment_change_mail" />
+    <fragment
+        android:id="@+id/phoneNumberFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.account.PhoneNumberFragment"
+        android:label="fragment_phone_number"
+        tools:layout="@layout/fragment_phone_number" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.account.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/birthdayFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.account.BirthdayFragment"
+        android:label="fragment_birthday"
+        tools:layout="@layout/fragment_birthday" />
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.order.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order">
+        <action
+            android:id="@+id/action_orderFragment_to_orderDetailsFragment"
+            app:destination="@id/orderDetailsFragment" />
+        <action
+            android:id="@+id/action_orderFragment_self"
+            app:destination="@id/orderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.order.OrderDetailsFragment"
+        android:label="fragment_order_details"
+        tools:layout="@layout/fragment_order_details" >
+        <argument
+            android:name="order"
+            app:argType="ahmed.adel.sleeem.clowyy.souq.pojo.response.OrdersByIdResponse$OrderResponseItem" />
+        <action
+            android:id="@+id/action_orderDetailsFragment_self"
+            app:destination="@id/orderDetailsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.explore.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore">
+        <action
+            android:id="@+id/action_exploreFragment_to_searchSucceedFragment"
+            app:destination="@id/searchSucceedFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment"
+            app:enterAnim="@anim/top_animation" />
+        <action
+            android:id="@+id/action_exploreFragment_self"
+            app:destination="@id/exploreFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cartFragment_to_shipToFragment"
+            app:destination="@id/shipToFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shipToFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.address.ShipToFragment"
+        android:label="fragment_ship_to"
+        tools:layout="@layout/fragment_ship_to">
+        <action
+            android:id="@+id/action_shipToFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+        <argument
+            android:name="orderRequest"
+            app:argType="ahmed.adel.sleeem.clowyy.souq.pojo.request.OrderRequest" />
+        <action
+            android:id="@+id/action_shipToFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.success.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" >
+        <action
+            android:id="@+id/action_successFragment_to_orderFragment"
+            app:destination="@id/orderFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/adressFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.address.AddressFragment"
+        android:label="fragment_adress"
+        tools:layout="@layout/fragment_address">
+        <action
+            android:id="@+id/action_adressFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+        <action
+            android:id="@+id/action_adressFragment_to_deleteAddressConfigrationFragment"
+            app:destination="@id/deleteAddressConfigrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.address.AddAddressFragment"
+        android:label="fragment_add_address"
+        tools:layout="@layout/fragment_add_address">
+        <argument
+            android:name="actionType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteAddressConfigrationFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.address.DeleteAddressConfigrationFragment"
+        android:label="fragment_delete_address_configration"
+        tools:layout="@layout/fragment_delete_address_configration" />
+
+    <fragment
+        android:id="@+id/searchSucceedFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.explore.SearchSucceedFragment"
+        android:label="fragment_search_succeed"
+        tools:layout="@layout/fragment_search_succeed">
+        <action
+            android:id="@+id/action_searchSucceedFragment_to_listCategoryFragment"
+            app:destination="@id/listCategoryFragment" />
+
+        <action
+            android:id="@+id/action_searchSucceedFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/top_animation"
+            />
+        <argument
+            android:name="searchStatus"
+            app:argType="ahmed.adel.sleeem.clowyy.souq.ui.fragments.explore.SearchSucceedFragment$SearchStatus" />
+        <argument
+            android:name="query"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/listCategoryFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.explore_fragment.ListCategoryFragment"
+        android:label="fragment_list_category"
+        tools:layout="@layout/fragment_list_category" >
+        <action
+            android:id="@+id/action_listCategoryFragment_to_searchSucceedFragment"
+            app:destination="@id/searchSucceedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.onboarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_homeFragment3"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="ahmed.adel.sleeem.clowyy.souq.ui.fragments.payment.PaymentFragment"
+        android:label="PaymentFragment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+        <argument
+            android:name="totalPrice"
+            app:argType="string"
+            android:defaultValue="0"
+            />
+    </fragment>
+
+
+</navigation>

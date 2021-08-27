@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "749946963569",
+    "project_id": "sell3a-d7b51",
+    "storage_bucket": "sell3a-d7b51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749946963569:android:0b0714e2e5e2d4f8a73dd0",
+        "android_client_info": {
+          "package_name": "com.example.souqadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749946963569-cm18ec0htktphjldgvh0eftdi90os3de.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.souqadmin",
+            "certificate_hash": "b09f66e9f830207d97500eaf2280acc124ae1d68"
+          }
+        },
+        {
+          "client_id": "749946963569-blqaeu99ai656927hshfna0ansde3oq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdyg0hfRhS8jPT8Ui8-wWUFK2LJyk85CY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749946963569-blqaeu99ai656927hshfna0ansde3oq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Mc Donald's - Thei Ha"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Westren cusils,Fast Food , Burger"
+        app:layout_constraintStart_toStartOf="@+id/nameTextView"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:progressBackgroundTint="#BD1104"
+        android:progressTint="#FF5722"
+        android:rating="4.5"
+        app:layout_constraintStart_toStartOf="@+id/descTextView"
+        app:layout_constraintTop_toBottomOf="@id/descTextView" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_search_et"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="3dp"
+        android:padding="3dp"
+        android:text="254m"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_search_et"
+        android:drawableStart="@drawable/ic_time"
+        android:drawablePadding="3dp"
+        android:drawableTint="@color/red"
+        android:padding="3dp"
+        android:text="27'"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ratingBar" />
+
+    <View
+        android:id="@+id/cubeView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/background_phone"
+        app:layout_constraintStart_toStartOf="@+id/descTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text='Freeship withIn 5km:Enter code "Freeship"'
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/cubeView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cubeView"
+        app:layout_constraintTop_toTopOf="@+id/cubeView" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cubeView"
+        app:layout_constraintEnd_toEndOf="@+id/cubeView"
+        app:layout_constraintStart_toStartOf="@+id/cubeView"
+        app:layout_constraintTop_toTopOf="@+id/cubeView"
+        app:srcCompat="@drawable/ic_3d" />
+
+    <View
+        android:id="@+id/linearView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@color/darkYellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cubeView" />
+
+    <View
+        android:id="@+id/saveView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/background_phone"
+        app:layout_constraintStart_toStartOf="@+id/cubeView"
+        app:layout_constraintTop_toBottomOf="@+id/linearView" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="30% off on all menu items"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/saveView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveView"
+        app:layout_constraintTop_toTopOf="@+id/saveView" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/saveView"
+        app:layout_constraintEnd_toEndOf="@+id/saveView"
+        app:layout_constraintStart_toStartOf="@+id/saveView"
+        app:layout_constraintTop_toTopOf="@+id/saveView"
+        app:srcCompat="@drawable/ic_sale" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

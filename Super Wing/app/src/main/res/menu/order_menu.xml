@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/handTossed"
+        android:title="@string/hand_tossed" />
+    <item
+        android:id="@+id/handMade"
+        android:title="@string/hand_made"/>
+    <item
+        android:id="@+id/thinCrust"
+        android:title="@string/thin_crust"/>
+</menu>

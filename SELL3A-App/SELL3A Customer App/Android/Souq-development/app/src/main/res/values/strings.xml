@@ -1,0 +1,258 @@
+<resources>
+    <string name="app_name">Sell3a</string>
+    <string name="super_flash_sale_n50_off">Super Flash Sale 50% Off</string>
+    <string name="category">Category</string>
+    <string name="more_category">More Category</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="cart">Cart</string>
+    <string name="offer">Offer</string>
+    <string name="profile">Profile</string>
+    <string name="action_search">Search</string>
+    <string name="see_more">See More</string>
+    <string name="recommended_product">Recommended Product</string>
+    <string name="we_recommend_the_best_for_you">We recommend the best for you</string>
+    <string name="logo">logo</string>
+    <string name="sign_in">Sign In</string>
+    <string name="have_a_account">have a account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password_again">Password Again</string>
+    <string name="password">Password</string>
+    <string name="your_email">Your Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="create_an_new_account">Create an new account</string>
+    <string name="let_s_get_started">Let’s Get Started</string>
+    <string name="review">Review</string>
+    <string name="write_review">Write Review</string>
+    <string name="login">Sign In</string>
+    <string name="image">image</string>
+    <string name="E_Mail">Your Email</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="welcome">Welcome to Sell3a</string>
+    <string name="or">OR</string>
+    <string name="noInternet">No Internet Connection</string>
+    <string name="serverInterrupted">Server Interrupted</string>
+    <string name="googleLogin">Sign in with Google</string>
+    <string name="facebookLogin">Login With Facebook</string>
+    <string name="sign">Sign in to Continue</string>
+    <string name="forgetPassword">Forget Password?</string>
+    <string name="account">Don\'t have account?</string>
+    <string name="details">Nike Air Max</string>
+    <string name="item_title">Nike Air Zoom Pegasus 36 Miami</string>
+    <string name="price">Price</string>
+    <string name="select_size">Select Size</string>
+    <string name="select_color">Select Color</string>
+    <string name="specification">Specification</string>
+    <string name="company_name">Company Name:</string>
+    <string name="reviewProduct">Review Product</string>
+    <string name="like">You Might Also Like</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="rate">4.5</string>
+    <string name="review1">( 0 Review )</string>
+    <string name="overall_review">Please write Overall level of satisfaction with your shipping / Delivery Service</string>
+    <string name="write_your_review">Write Your Review</string>
+    <string name="write_your_review_here">Write your review here</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="your_cart">Your Cart</string>
+    <string name="enter_cupon_code">Enter Cupon Code</string>
+
+    <string name="check_out">Check Out</string>
+    <string name="thank_you_for_shopping_using_lafyuu">thank you for shopping using Sel3a</string>
+    <string name="back_to_order">Back To Order</string>
+    <string name="ship_to">Ship To</string>
+    <string name="edit">Edit</string>
+    <string name="feed">Feed</string>
+    <string name="man_fashion">Man Fashion</string>
+    <string name="woman_fashion">Woman Fashion</string>
+    <string name="super_flash_sale">Super Flash Sale</string>
+    <string name="favorite_product">Favorite Product</string>
+
+    <string name="notification">Notification</string>
+    <string name="product_not_found">Product Not Found</string>
+    <string name="thanks_for_shopping">thank you for shopping using Sel3a</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="result_0">0 Result</string>
+    <string name="result">Result</string>
+    <string name="man_shoes">Man Shoes</string>
+    <string name="short_by">Short By</string>
+    <string name="best_match">Best Match</string>
+    <string name="time1">Time: ending soonest</string>
+    <string name="time2">Time: newly listed</string>
+    <string name="price_and_shipping">Price + Shipping: lowest first</string>
+    <string name="price_and_shipping2">Price + Shipping: highest first</string>
+    <string name="distance">Distance: nearest first</string>
+    <string name="filter_search">Filter Search</string>
+    <string name="price_range">Price Range</string>
+    <string name="min">MIN</string>
+    <string name="max">MAX</string>
+    <string name="condition">Condition</string>
+    <string name="not_specified">Not Specified</string>
+    <string name="used">Used</string>
+    <string name="new1">New</string>
+    <string name="buying_format">Buying Format</string>
+    <string name="show_only">Show Only</string>
+    <string name="all_listings">All Listings</string>
+    <string name="accepts_offers">Accepts Offers</string>
+    <string name="auction">Auction</string>
+    <string name="buy_it_now">Buy It Now</string>
+    <string name="classified_ads">Classified Ads</string>
+    <string name="free_returns">Free Returns</string>
+    <string name="returns_accepted">Returns Accepted</string>
+    <string name="authorized_seller">Authorized Seller</string>
+    <string name="completed_items">Completed Items</string>
+    <string name="sold_items">Sold Items</string>
+    <string name="deals_and_savings">Deals And Savings</string>
+    <string name="Sale_items">Sale Items</string>
+    <string name="listed_as_lots">Listed as Lots</string>
+    <string name="search_in_description">Search in Description</string>
+    <string name="benefits_charity">Benefits charity</string>
+    <string name="authenticity_verified">Authenticity Verified</string>
+    <string name="apply">Apply</string>
+
+    <string name="Account">Account</string>
+    <string name="order">Order</string>
+    <string name="address">Address</string>
+    <string name="payment">Payment</string>
+    <string name="gender">Gender</string>
+    <string name="birthdate">Birthday</string>
+    <string name="mail">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="change_password">Change Password</string>
+    <string name="more">More</string>
+    <string name="date">12-12-2000</string>
+    <string name="email_examble">rex4dom@gmail.com</string>
+    <string name="num">(307) 555-0133</string>
+    <string name="pass">•••••••••••••••••</string>
+    <string name="name">Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="save">Save</string>
+    <string name="choose_gender">Choose Gender</string>
+    <string name="change_mail">Change Email</string>
+    <string name="send_virification">We Will Send verification to your New Email</string>
+    <string name="phone_examble">(307) 555-0133</string>
+    <string name="old_password">Old Password</string>
+    <string name="password_examble">•••••••••••••••••</string>
+    <string name="new_password">New Password</string>
+    <string name="new_password_again">New Password Again</string>
+    <string name="your_birthdate">Your Birhday</string>
+    <string name="items_purchased">Items purchased</string>
+    <string name="order_status">Order Status</string>
+    <string name="items">Items</string>
+    <string name="order_details">Order Details</string>
+    <string name="packing">Packing</string>
+    <string name="shipping">Shipping</string>
+    <string name="arriving">Arriving</string>
+    <string name="success">Success</string>
+    <string name="product">Product</string>
+    <string name="date_shipping">Date Shipping</string>
+    <string name="no_resi">No. Resi</string>
+    <string name="shipping_details">Shipping Details</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="import_charges">Import charges</string>
+    <string name="total_price">Total Price</string>
+    <string name="notify_me">Notify Me</string>
+    <string name="_90_off_super_mega_sale">90% Off Super Mega Sale</string>
+    <string name="special_birthday_lafyuu">Special birthday Sel3a</string>
+    <string name="use_megsl_cupon_for_get_90_off">Use “MEGSL” Cupon For Get 90%off</string>
+    <string name="addaddress">Add Address</string>
+    <string name="country">Country or region *</string>
+    <string name="streer_address">Street Address*</string>
+    <string name="streer_address2">Street Address 2 (Optional)</string>
+    <string name="city">City*</string>
+    <string name="state">State/Province/Region*</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure_wanna_delete_address">Are you sure wanna delete address</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="favorite">Favorite</string>
+    <string name="activity">Activity</string>
+    <string name="price_low_to_high">Price: Low to High</string>
+    <string name="price_high_to_low">Price High to Low</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="sale">Sale</string>
+    <string name="done">Done</string>
+    <string name="color">Color</string>
+    <string name="brand">Brand</string>
+    <string name="products_have_sale_only">products have sale only</string>
+    <string name="all_products">all products</string>
+    <string name="logout">Logout</string>
+
+    <string-array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="country_list">
+        <item>Egypt</item>
+        <item>Algeria</item>
+        <item>Iraq</item>
+        <item>Jordan</item>
+        <item>Lebanon</item>
+        <item>Libya</item>
+    </string-array>
+    <string-array name="city_list">
+        <item>Cairo</item>
+        <item>Alexandria</item>
+        <item>Aswan</item>
+        <item>Asyut</item>
+        <item>Damanhur</item>
+        <item>Beni Suef</item>
+        <item>Mansoura</item>
+        <item>Damietta</item>
+        <item>Faiyum</item>
+        <item>Tanta</item>
+        <item>Giza</item>
+        <item>Ismailia</item>
+        <item>Kafr El Sheikh</item>
+        <item>Luxor</item>
+        <item>Marsa Matruh</item>
+        <item>Minya</item>
+        <item>Shibin El Kom</item>
+        <item>Kharga</item>
+        <item>Arish</item>
+        <item>Port Said</item>
+        <item>Banha</item>
+        <item>Qena</item>
+        <item>Hurghada</item>
+        <item>Zagazig</item>
+        <item>Sohag</item>
+        <item>El Tor</item>
+        <item>Suez</item>
+    </string-array>
+
+    <!--    <string name="default_web_client_id" translatable="false">749946963569-blqaeu99ai656927hshfna0ansde3oq7.apps.googleusercontent.com</string>-->
+    <string name="facebook_app_id">157083326380693</string>
+    <string name="fb_login_protocol_scheme">fb157083326380693</string>
+    <string name="remove_review">Remove Review</string>
+    <string name="modify_review">Modify Review</string>
+    <string name="no_review_yet">No Review Yet</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="notification_Channel_ID">ahmed.adel.sleeem.clowyy.channel1</string>
+    <string name="retry">Retry</string>
+    <string name="please_check_your_internet_connection">Please Check Your Internet Connection</string>
+    <string name="oops">Oops!...</string>
+    <string name="pay">Pay</string>
+    <string name="language">Language</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="register">Register</string>
+    <string name="_0_egp">0 EGP</string>
+    <string name="_13_0_egp">13.0 Egp</string>
+    <string name="dominic">Dominic</string>
+    <string name="ovo">Ovo</string>
+    <string name="code113_400">CODE113-400</string>
+    <string name="online_shopping">Online shopping</string>
+    <string name="women_fashion_shopping_online_shop_from_a_huge_range_of_latest_women_clothing_shoes_makeup_kits_watches_footwear_and_more_for_women_at_best_price">Women Fashion Shopping Online - Shop from a huge range of latest women clothing, shoes, makeup Kits, Watches, footwear and more for women at best price</string>
+    <string name="next">Next</string>
+    <string name="prev">Prev</string>
+    <string name="add_to_cart_button_works_on_product_pages_the_customizations_in_this_section_compatible_with_dynamic_checkout_buttons">Add to cart button works on product pages. The customizations in this section compatible with dynamic checkout buttons</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="your_payment_has_been_successfully_completed_you_will_receive_a_confirmation_email_within_a_few_minutes">Your payment has been successfully completed. You will receive a confirmation email within a few minutes.</string>
+    <string name="finish">Finish</string>
+    <string name="fox_for_fun">Fox for fun</string>
+    <string name="laser_blue_anthracite_welcome_on_white_laser_blue_anthracite_welcome_on_white_laser_blue_anthracite_welcome_on_white_laser_blue_anthracite_welcome_on_white_laser_blue_anthracite_welcome_on_white">Laser Blue/Anthracite/Welcome on/white Laser Blue/Anthracite/Welcome on/white Laser Blue/Anthracite/Welcome on/white Laser Blue/Anthracite/Welcome on/white Laser Blue/Anthracite/Welcome on/white</string>
+
+</resources>

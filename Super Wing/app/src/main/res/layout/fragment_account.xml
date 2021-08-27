@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.fragments.account.AccountFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            app:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/home_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:layout_scrollFlags="noScroll">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView_profile"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:src="@drawable/ic_userprofileimage"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="1dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/usernameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Username"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/circleImageView_profile"
+                        app:layout_constraintStart_toEndOf="@+id/circleImageView_profile"
+                        app:layout_constraintTop_toTopOf="@+id/circleImageView_profile" />
+
+                    <TextView
+                        android:id="@+id/editProfileTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:drawablePadding="16dp"
+                        android:text="Edit Profile"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="@+id/usernameTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/usernameTextView"
+                        app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_circle"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:src="@drawable/ic_florist"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/circleImageView_profile"
+                        app:layout_constraintStart_toEndOf="@+id/circleImageView_profile" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/settingTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Rewards Member"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar"
+            app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGray"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingTextView" />
+
+        <TextView
+            android:id="@+id/languageTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Rewards"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view5"
+            app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+        <View
+            android:id="@+id/view222"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGray"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageTextView" />
+
+        <TextView
+            android:id="@+id/settingTextView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Business Profile"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view222"
+            app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+        <View
+            android:id="@+id/view53"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGray"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingTextView3" />
+
+        <TextView
+            android:id="@+id/languageTextView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Scheduled"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view53"
+            app:drawableEndCompat="@drawable/ic_arrow_right" />
+
+        <View
+            android:id="@+id/view33"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGray"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageTextView3" />
+
+        <TextView
+            android:id="@+id/TextViewChangeLanguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:clickable="true"
+            android:focusableInTouchMode="false"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="20dp"
+            android:text="Change Language"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view33"
+            app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/background_search_et"
+            android:backgroundTint="@color/red"
+            android:gravity="center"
+            android:text="New"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TextViewChangeLanguage"
+            app:layout_constraintEnd_toEndOf="@+id/TextViewChangeLanguage"
+            app:layout_constraintTop_toTopOf="@+id/TextViewChangeLanguage" />
+
+        <View
+            android:id="@+id/view54"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGray"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextViewChangeLanguage" />
+
+        <TextView
+            android:id="@+id/languageTextView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Saved Places"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view54"
+            app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+        <View
+            android:id="@+id/view34"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGray"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageTextView4" />
+
+        <TextView
+            android:id="@+id/settingTextView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:padding="20dp"
+            android:text="Support"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view34" />
+
+        <View
+            android:id="@+id/view55"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGray"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingTextView5" />
+
+        <TextView
+            android:id="@+id/languageTextView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Drive with Super Wing"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view55"
+            app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+        <View
+            android:id="@+id/view35"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGray"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageTextView5" />
+
+        <TextView
+            android:id="@+id/textViewLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="20dp"
+            android:text="Logout"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view35"
+            app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/background_search_et"
+            android:backgroundTint="@color/red"
+            android:gravity="center"
+            android:text="New"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewLogout"
+            app:layout_constraintEnd_toEndOf="@+id/textViewLogout"
+            app:layout_constraintTop_toTopOf="@+id/textViewLogout" />
+
+        <View
+            android:id="@+id/view56"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGray"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLogout" />
+
+        <TextView
+            android:id="@+id/TextViewSettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Settings"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view56"
+            app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="50dp"-->
+        <!--            android:layout_height="20dp"-->
+        <!--            android:layout_marginEnd="64dp"-->
+        <!--            android:background="@drawable/background_search_et"-->
+        <!--            android:backgroundTint="@color/red"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="New"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="12sp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/TextViewSettings"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/TextViewSettings"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/TextViewSettings" />-->
+
+        <View
+            android:id="@+id/view36"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGray"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextViewSettings" />
+
+        <TextView
+            android:id="@+id/settingTextView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Share Feedback"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view36"
+            app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+        <View
+            android:id="@+id/view57"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGray"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingTextView7" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
