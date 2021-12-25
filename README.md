@@ -1,9 +1,9 @@
 # Android-Projects
-<h1> SELL3A App Video <h1>
+<h1>1- SELL3A App Video <h1>
 <h2> Ecommerce App <h2>
 https://www.linkedin.com/posts/taha-khalefah-46928115a_android-ios-mobile-activity-6817107777459101696--N-V
 
-<h1> Super Wing <h1>
+<h1>2- Super Wing <h1>
 <p align="center">
   <img src="/Super Wing/1.jpg" width="350" alt="accessibility text">
   <img src="/Super Wing/2.jpg" width="350" title="hover text">
@@ -23,7 +23,7 @@ https://www.linkedin.com/posts/taha-khalefah-46928115a_android-ios-mobile-activi
   <img src="/Super Wing/16.jpg" width="350" title="hover text">  
 </p>
   
-  <h1> Tripaway-App </h1>
+  <h1>3- Tripaway-App </h1>
 
 
 Android Mobile Application that helps the user to record his planned trips with the start and end Geo-points, accompanied with the date and time of the trip and notes. The application should remind the user with his trips on the time specified by the user. In addition, the application should navigate the user to his destination. After that, the application should keep track with the upcoming and past trips.
@@ -40,7 +40,7 @@ Design Architecture
 ===================
 Model View ViewModel
   
-<h1> BestRepo </h1>
+<h1>4- BestRepo </h1>
  
 a small app that will list the most starred Github repos that were created in the last 30 days.
 
@@ -70,7 +70,7 @@ Other Technology
   <img src="Screenshot_1619697853.png" width="350" alt="accessibility text">
 </p>
 
-  <h1> Pokemon </h1>
+  <h1>5- Pokemon </h1>
 🗡️ Android Pokemon App using Dagger Hilt, RXjava,  Jetpack (Room, ViewModel, LiveData) based on MVVM architecture.
           
           
@@ -88,7 +88,7 @@ open api
 https://pokeapi.co/
 
   
-<h1> The-News-App</h1>
+<h1>6- The-News-App</h1>
 show news and go to details
 Using
 -----
