@@ -93,7 +93,9 @@ https://kotlinlang.org/docs/reference/coroutines-overview.html
 https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-dispatchers/index.html
 https://medium.com/androiddevelopers/coroutines-first-things-first-e6187bf3bb21
 <br>
-<img src ="107910972_594518177879555_5531481920853375315_n.jpg">
-<img src ="107922100_3301910876520316_6383315337641730938_n.jpg">
-<img src ="107927130_276328807022796_3549297342259960016_n.jpg">
-<img src ="109121233_708441903063621_97551621443705578_n.jpg">
+  <p align="center">
+<img src ="107910972_594518177879555_5531481920853375315_n.jpg" width="350" title="hover1 text">
+<img src ="107922100_3301910876520316_6383315337641730938_n.jpg" width="350" title="hover2 text">
+<img src ="107927130_276328807022796_3549297342259960016_n.jpg" width="350" title="hover3 text">
+<img src ="109121233_708441903063621_97551621443705578_n.jpg" width="350" title="hover4 text">
+</p>
